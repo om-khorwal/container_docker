@@ -1,0 +1,5 @@
+FROM fedora:latest
+COPY app.py /app/
+EXPOSE 8080
+WORKDIR /app/
+CMD ["python3", "app.py"]
